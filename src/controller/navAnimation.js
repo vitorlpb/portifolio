@@ -16,6 +16,7 @@ function initNavAnimation() {
     // Inicializa a imagem
     updateCircleImage(circle);
 
+
     // Evento para trocar a imagem no final da animação
     circle.addEventListener('animationiteration', () => {
         updateCircleImage(circle);

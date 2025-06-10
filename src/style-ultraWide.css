@@ -135,8 +135,8 @@ a {
       margin-left: 2%;
       position: relative;
       width: 100%;
-      max-width: 70%;
-      height: 100px;
+      /* max-width: 70%; */
+      height: 1vw;
     }
 
     .circle {
@@ -156,6 +156,11 @@ a {
     .circle:nth-child(3) { animation-delay: 2.0s; }
     .circle:nth-child(4) { animation-delay: 3.0s; }
     .circle:nth-child(5) { animation-delay: 4.0s; }
+    .circle:nth-child(6) { animation-delay: 5.0s; }
+    .circle:nth-child(7) { animation-delay: 6.0s; }
+    .circle:nth-child(8) { animation-delay: 7.0s; }
+    .circle:nth-child(9) { animation-delay: 8.0s; }
+    .circle:nth-child(10) { animation-delay: 9.0s; }
 
 
 @keyframes moveFade {
@@ -175,6 +180,103 @@ a {
         opacity: 0;
       }
     }
+
+/* Cards */
+
+.carousel-container {
+  position: relative;
+  /* width: 90%; */
+  margin: 0 auto 32px auto;
+  overflow: hidden;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(.77,0,.18,1);
+  will-change: transform;
+  gap: 32px;
+  width: 100%;
+  margin: 1.5% 1.5% 1.5% 1.5%;
+}
+
+.card-info {
+  min-width: 350px;
+  max-width: 400px;
+  flex: 0 0 350px;
+  margin: 0;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.carousel-indicators span {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #c799ff44;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.carousel-indicators span.active,
+.carousel-indicators span:hover {
+  background: #c799ff;
+}
+
+.card-info {
+  background: rgba(30, 20, 60, 0.85);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 rgba(199, 153, 255, 0.15);
+  padding: 1.5% 1.5% 1.5% 1.5%;
+  margin: 0 auto 24px auto;
+  margin: 0 0 0 1.5%;
+  max-width: 420px;
+  border: 1.5px solid #c799ff33;
+  backdrop-filter: blur(2px);
+  transition: box-shadow 0.3s;
+}
+
+
+
+.card-info:hover {
+  box-shadow: 0 8px 32px 0 rgba(199, 153, 255, 0.25);
+}
+
+.card-info ul {
+  margin: 0;
+  padding: 0;
+}
+
+.card-info li {
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  font-size: 1.13rem;
+}
+
+.card-info .grad-label {
+  color: #c799ff;
+  font-weight: bold;
+  min-width: 110px;
+  display: inline-block;
+  letter-spacing: 0.5px;
+}
+
+.card-info .grad-value {
+  color: #fff;
+  margin-left: 8px;
+  letter-spacing: 0.2px;
+}
+
 
 
 /* truck animation */
@@ -318,100 +420,4 @@ a {
   100% {
     transform: translateX(-170vw);
   }
-}
-
-
-
-.carousel-container {
-  position: relative;
-  /* width: 90%; */
-  margin: 0 auto 32px auto;
-  overflow: hidden;
-  padding-bottom: 32px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.carousel-track {
-  display: flex;
-  transition: transform 0.5s cubic-bezier(.77,0,.18,1);
-  will-change: transform;
-  gap: 32px;
-  width: 100%;
-  margin: 1.5% 1.5% 1.5% 1.5%;
-}
-
-.card-info {
-  min-width: 350px;
-  max-width: 400px;
-  flex: 0 0 350px;
-  margin: 0;
-}
-
-.carousel-indicators {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  margin-top: 18px;
-}
-
-.carousel-indicators span {
-  display: block;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: #c799ff44;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.carousel-indicators span.active,
-.carousel-indicators span:hover {
-  background: #c799ff;
-}
-
-.card-info {
-  background: rgba(30, 20, 60, 0.85);
-  border-radius: 16px;
-  box-shadow: 0 4px 24px 0 rgba(199, 153, 255, 0.15);
-  padding: 1.5% 1.5% 1.5% 1.5%;
-  margin: 0 auto 24px auto;
-  margin: 0 0 0 1.5%;
-  max-width: 420px;
-  border: 1.5px solid #c799ff33;
-  backdrop-filter: blur(2px);
-  transition: box-shadow 0.3s;
-}
-
-
-
-.card-info:hover {
-  box-shadow: 0 8px 32px 0 rgba(199, 153, 255, 0.25);
-}
-
-.card-info ul {
-  margin: 0;
-  padding: 0;
-}
-
-.card-info li {
-  margin-bottom: 18px;
-  display: flex;
-  align-items: center;
-  font-size: 1.13rem;
-}
-
-.card-info .grad-label {
-  color: #c799ff;
-  font-weight: bold;
-  min-width: 110px;
-  display: inline-block;
-  letter-spacing: 0.5px;
-}
-
-.card-info .grad-value {
-  color: #fff;
-  margin-left: 8px;
-  letter-spacing: 0.2px;
 }

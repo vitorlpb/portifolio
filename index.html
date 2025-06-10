@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vitor Borges Paes</title>
+  <!-- <link rel="stylesheet" href="../style-ultraWide.css" media="screen and (min-width: 700px)">   -->
+  <link rel="stylesheet" href="src/style-mobile.css"> <!--media="screen and (max-width: 1095px)" -->
+  <!-- <link rel="stylesheet" href="../style-desktop.css" > -->
+</head>
+<body>
+
+<header>
+  <div class="hamburger" onclick="document.querySelector('header').classList.toggle('nav-open')">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>  
+  <nav>
+    <a href="#">Sobre mim</a>
+    <a href="#">Tecnologias</a>
+    <a href="#">Projetos</a>
+    <a href="#">Carreira</a>
+  </nav>
+  <div class="icons">
+    <a href="#" style="color:#aefbff;">in</a>
+    <span>😺</span>
+  </div>
+</header>
+
+
+<div class="perfil-container">
+  <img src="../../icons/profile.png" alt="Vitor Borges Paes" class="perfil-img" />
+  <div class="perfil-info">
+    <h1>Vitor Borges Paes</h1>
+    <p>Desenvolvedor full-stack</p>
+    <button class="botao-contato"> Contato </button>
+  </div>
+
+  <div class="container">
+    <div class="circle">1</div>
+    <div class="circle">2</div>
+    <div class="circle">3</div>
+    <div class="circle">4</div>
+    <div class="circle">5</div> 
+    <div class="circle">6</div> 
+    <div class="circle">7</div> 
+    <div class="circle">8</div> 
+    <div class="circle">9</div> 
+    <div class="circle">10</div> 
+  </div>
+
+</div>
+
+  <div class="description sectionBorder ">
+    <h2 class="title_middle">Sobre mim</h2>
+    <p>Olá, meu nome é Vitor Borges Paes, sou um desenvolvedor full-stack apaixonado por tecnologia e inovação. Tenho experiência em diversas linguagens de programação e frameworks, sempre buscando aprender e me aprimorar.  Atualmente, estou focado em projetos que envolvem desenvolvimento web e mobile, sempre buscando entregar soluções de alta qualidade e que atendam às necessidades dos usuários.</p>
+  </div>
+
+<section>
+  <div class="graduation sectionBorder">
+    <h1 class="title_middle-formation">Formação</h1>
+
+    <div class="carousel-container">
+      <div class="carousel-track" id="cards-formacao"> </div>
+      <div class="carousel-indicators">
+        <span data-slide="0" class="active"></span>
+        <span data-slide="1"></span>
+        <span data-slide="2"></span>
+        <span data-slide="3"></span>
+      </div>
+    </div>
+    <div class="loop-wrapper">
+      <div class="mountain"></div>
+      <div class="hill"></div>
+      <div class="tree"></div>
+      <div class="tree"></div>
+      <div class="tree"></div>
+      <div class="rock"></div>
+      <div class="truck"></div>
+      <div class="wheels"></div>
+    </div>     
+  </div>
+</section>
+
+<script src="./src/controller/formationAnimation.js"></script>
+<script src="./src/controller/navAnimation.js"></script>
+</body>
+</html>
+
+
