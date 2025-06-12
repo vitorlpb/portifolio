@@ -223,6 +223,7 @@ section {
 
 .description {
   background: rgba(30, 20, 60, 0.85);
+  font-size: clamp(1rem, 2vw, 2rem);
 }
 
 .title_middle {
@@ -321,11 +322,7 @@ a {
   letter-spacing: 0.2px;
 }
 
-
-
 /* bolinha scroll */
-
-
 
 .carousel-indicators {
   display: flex;
@@ -352,7 +349,6 @@ a {
 /* bolinha scroll */
 
 /* truck animation */
-
 
 .loop-wrapper {
   margin: 0 auto;
