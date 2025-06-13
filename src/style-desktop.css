@@ -164,10 +164,15 @@ section {
   padding: 20px;
 }
 
-/* .grid-info {
-  display: grid;
-  grid-template-columns: 0.5fr auto;
-} */
+.info-border {
+  border-radius: 10px;
+  box-shadow: 20px 20px 20px rgba(121, 3, 153, 0.367);
+  /* box-shadow: 20px 20px 20px rgba(121, 3, 153, 0.367),
+  inset 20px 100px 100px 20px rgba(129, 0, 249, 0.263); */
+  padding: 20px;
+  margin: 20px 40px;
+}
+
 
 .grid-info {
   display: grid;
@@ -179,6 +184,14 @@ section {
 .description {
   background: rgba(30, 20, 60, 0.85);
   font-size: clamp(1rem, 2vw, 1.5rem);
+  text-align: center;
+}
+
+@media screen and (min-width: 1441px) {
+  .description {
+    font-size: 2rem;
+  }
+  
 }
 
 .title_middle {
@@ -210,7 +223,8 @@ a {
   border-radius: 16px;
   box-shadow: 0 4px 14px 0 rgba(199, 153, 255, 0.15);
   padding: 1.5% 1.5% 1.5% 1.5%;
-  margin-bottom: 100px;
+  margin: 30px 0 40px 30px;
+  /* margin-bottom: 40px; */
   border: 1.5px solid #c799ff33;
   backdrop-filter: blur(2px);
   transition: box-shadow 0.3s;
