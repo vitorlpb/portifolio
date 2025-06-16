@@ -181,7 +181,7 @@ section {
 .description {
   background: rgba(30, 20, 60, 0.85);
 
-  font-size: max(1.2rem, 1vw);
+  font-size: max(1.2rem, 1.2vw);
   text-align: center;
 }
 
