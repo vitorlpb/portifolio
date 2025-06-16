@@ -221,6 +221,12 @@ section {
   padding: 20px;
 }
 
+.info-border {
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 40px;
+}
+
 .description {
   background: rgba(30, 20, 60, 0.85);
   font-size: clamp(1rem, 2vw, 2rem);
